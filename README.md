@@ -7,10 +7,7 @@ Conan Exiles is a multiplayer survival game by Funcom. Caligula is the working t
 
 This repository is a place to develop and discuss the rules, policies, mods, and other choices administrative choices that could make the server an enjoyable reality. 
 
-My name is Yyanu Nav. I'm the host of this repository and my dream would be to administer my own Conan Exiles server at some point. However if I find the right partner or team I might pass control to them at some point. For now, however this is my vision but I am excited to accept feedback and input from others. Using git anyone can contribute ... or even branch off from my vision. My vision grows from basic principles which I'll call the Axioms. 
-
 Interested? Have a comment?  Go to the [WIKI](https://github.com/Yyanu-nav/caligula/wiki)
 
-thanks,
+Update: I've started a Twine project to create an interactive walkthrough of playing on a server built to these specifications. 
 
-~yyanu

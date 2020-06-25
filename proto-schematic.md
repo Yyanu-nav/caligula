@@ -47,7 +47,7 @@ This is the game openning spawn point. Contains thespians to greet new players a
 ### Highway
 
 # Palace
-Inside [New Rome](##new-rome) this palace is where patricians mingle. Players that claim patrician status will be delivered to the Palace. 
+Inside [New Rome](#new-rome) this palace is where patricians mingle. Players that claim patrician status will be delivered to the Palace. 
 
 # SetStories
 SetStories are a highlevel chain of events that may be experienced by players. (will reconsider the terminology). 

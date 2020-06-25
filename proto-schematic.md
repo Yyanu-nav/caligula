@@ -17,14 +17,42 @@ Make a list of admin defined general locations where development happens. Region
  4. [Gate of Ivrel](#gate-of-ivrel)
  5. [Palace](#palace)
  
- # Thespian List
+# Thespian List
  List of the thespians, names, description, kit and links to their region, kit, and mushi script. In plain language describe their functions. In pseudo-code describe quests etc. 
 
 # Region's Defined
 Not sure why this is separate from the list. Will revisit the logic here.
 
-## New Rome
-A big city.
+# New Rome
+A big city. Contains the [Palace](#palace); mansions of all patricians... I picture a teired city similar to "Charisat" in _City of Bones_ by Martha Wells with the palace near the top. Almost every plebeian guild headquaters and living arrangement is in the city.
 
-## Palace
-Inside [New Rome](##new-rome) this palace is where patricians mingle.
+## New Rome Regions
+[Palace](#palace)
+
+## New Rome Buildings
+
+# Caravanserai
+This is the game openning spawn point. Contains thespians to greet new players and offer them RP roles and streams to begin. 
+
+## Thespians
+### Marus
+### Galeta
+### Septima
+
+## Buildings
+### Tent
+[Marus](#marus) waits outside. Galeta and necessary attendents are inside. 
+### Caravan
+[Septima](#septima) is at the Caravan
+### Highway
+
+# Palace
+Inside [New Rome](##new-rome) this palace is where patricians mingle. Players that claim patrician status will be delivered to the Palace. 
+
+# SetStories
+SetStories are a highlevel chain of events that may be experienced by players. (will reconsider the terminology). 
+SetStories are distinct from organic stories that all players are creating ans experiencing in that they are facilitated by the server design. 
+Specifically SetStories generall consist of locations, thespians and quests. The word "quest" refers to the specific object of the same name in the mushi  programming language.
+## Choosing A Class
+## Guarding the Caravan
+## Striking out alone 

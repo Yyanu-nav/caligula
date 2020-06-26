@@ -2,97 +2,156 @@
 Caligula Proto-Schematic
 :: StoryData
 { "ifid": "64A48A1A-4A4C-4A7D-997D-EDA2874F2581" }
+:: StoryAuthor
+Yyanu Nav
+:: PassageHeader
+''<<=passage()>>''
+----
+
 :: Start
-Caligula Proto-Schematic
- 
+
+/* This is a comment */
 This document tries to map out exactly what I have actually placed to date in a local game. The purpose is to record my experiments and ulitmately to create a recipe for deployment of a real server. Since my local game will be deleted (though individual mushi scripts and kits might still be saveable) it is the local game is a prototype for the server. This "schematic" is also a prototype for future schematics or recipes. I will use this to learn how to develop a server recipe.
-Begin exploring with the [[Project Walkthrough]].
+Begin exploring with the [[Recipe]].
 Or look at the massive index of every node [[Index]].
 
-:: Project Walkthrough
-Install mods from [[Modlist]]
-
-Designate regions in order:
-[[rg Gate of Ivrel]]
-[[rg Caravanserai]] or [[rg Shattered Road]]
-[[rg New Rome]] or [[rg Ambush]]
-[[rg Palance]] or [[rg Market]] or [[rg Slave Pits]]
-
-Create Thespians
-[[Thespian list]]
-
 :: Index
-This large index has every single node listed in an arbitrary order. For a more logical walk through go back to the [[Start]]
+This large index has every single node listed in an arbitrary order. For a more
+logical walk read the [[Recipe]]
 
-[[Start]]
-[[Index]]
-[[Mod list]]
-[[Regions list]]
-[[Thespian List]]
-[[Region's Defined]]
-[[rg New Rome]]
-[[rg Caravanserai]]
-[[Caravan Tent]]
-[[Caravan]]
-[[Highway]]
-[[Palace]]
-[[SetStories]]
+//This should be procedurally generated in vim... or later with sugarcube code//
+
+:: Recipe
+This is the list of tasks in order to re-create the offline game prototype
+for Caligula. Despite trying not to it includes original spec ideas that really
+ought to appear only in the Wiki. 
+Later schematics will do better I hope.
+
+# Install mods from [[Mod list]]
+# Set [[Server settings]]
+# Designate regions
+## [[Gate]]
+## [[Caravanserai]] 
+## [[Highway]]
+## [[New Rome]] 
+## [[Ambush]]
+## [[Palace]] 
+## [[Market]] 
+## [[Slave Pits]]
+# Create [[thespians|Thespian list]]
+# Create [[ventures|Ventures]]
+
+[[Return to the start|Start]]
+[[Review the Index|Index]]
 
 
-:: Mod list
+:: Mod list [list]
 Numbered list of mods in order:
  1. Pippi
+
+:: Server settings
+Set the server like this:
+* Experience Multiplier 0.1 or painfully low
+* Gather Multiplier 0.1 or painfully low
+* NPC settings "hard"
+* Time of day... hmm I don't know yet.
  
-:: Regions list
+:: Regions list [list]
 Make a list of admin defined general locations where development happens. Regions are not defined by strick location parameters (that occurs in maybe something called *building plan*). Regions are human readable descriptions of places with a theme or certain activity. Large Regions may contain smaller regions.
 
- 1. [[New Rome|rg New Rome]]
- 2. [[Caravanserai|rg Caravanserai]]
- 3. [[Ambush|rg Ambush]]
- 4. [[Gate of Ivrel|rg Gate of Ivrel]]
- 5. [[Palace|rg Palace]]
+ 1. [[New Rome]]
+ 2. [[Caravanserai]]
+ 3. [[Ambush]]
+ 4. [[Gate]]
+ 5. [[Palace]]
  
-:: Thespian List
- List of the thespians, names, description, kit and links to their region, kit, and mushi script. In plain language describe their functions. In pseudo-code describe quests etc. 
-[[ts Marus]]
-[[ts Galeta]]
-[[ts Septima]]
+:: Thespian list [list]
+List of the thespians, names, description, kit and links to their region, kit, and mushi script. In plain language describe their functions. In pseudo-code describe quests etc. 
+[[Marus]]
+[[Galeta]]
+[[Septima]]
 
 
-:: rg New Rome
-A big city. Contains the [Palace](#palace); mansions of all patricians... I picture a teired city similar to "Charisat" in _City of Bones_ by Martha Wells with the palace near the top. Almost every plebeian guild headquaters and living arrangement is in the city.
+:: New Rome [region city]
+A big city. Contains the [[Palace]]; mansions of all patricians... 
+I picture a teired city similar to "Charisat" in //City of Bones// by Martha 
+Wells with the palace near the top. Almost every plebeian guild headquaters 
+and living arrangement is in the city.
 
-::# New Rome Regions
-[Palace](#palace)
+''Contains regions:'' 
+[[Palace]]
 
-::# New Rome Buildings
+//try using code to generate list of all places tagged inNewRome//
 
-:: rg Caravanserai
+
+:: Caravanserai
 This is the game openning spawn point. Contains thespians to greet new players and offer them RP roles and streams to begin. 
 
 Thespians in Caravanserai:
-[[ts Marus]]
-[[ts Galeta]]
-[[ts Septima]]
+[[Marus]]
+[[Galeta]]
+[[Septima]]
 
-Buildings
-[[Caravan Tent]]
+:: Marus [thespian inCaravanserai plebeian ven_Choose]
+Marus should be the first NPC to meet. 
 
-:: Caravan Tent
+
+:: Galeta [thespian inCaravanserai patrician ven_Choose]
+Galeta is in the fancy tent. She will decide if you can be a Patrician or not.
+
+
+:: Septima [thespian inCaravanerai plebeian ven_Choose ven_Enslaved]
+Septima the Drover transports the plebeian players to the city. Players may
+work for her, go into debt, or risk being captured by slavers.
+
+
+:: Caravan Tent [building inCaravanserai]
 [Marus](#marus) waits outside. Galeta and necessary attendents are inside. 
 
-:: Caravan
+:: Caravan [building inCaravanserai] 
 [Septima](#septima) is at the Caravan
 
-:: Highway
+:: Highway [region ven_Enslaved]
+The Highway is a path from the [[Gate]] towards the City perhaps.
+Travelling on the highway risks encounters with slavers.
 
-:: rg Palace
-Inside [New Rome](#new-rome) this palace is where patricians mingle. Players that claim patrician status will be delivered to the Palace. 
+:: Palace [region inNewRome ven_Office]
+This palace is where patricians mingle. 
+Players that claim patrician status will be delivered to the Palace. 
 
-:: SetStories
-SetStories are a highlevel chain of events that may be experienced by players. (will reconsider the terminology). 
-SetStories are distinct from organic stories that all players are creating ans experiencing in that they are facilitated by the server design. 
-Specifically SetStories generall consist of locations, thespians and quests. The word "quest" refers to the specific object of the same name in the mushi  programming language.
-## Choosing A Class
-## Guarding the Caravan
-## Striking out alone 
+It is the starting point for the venture of [[Choosing your office]] for
+patrician players.
+
+:: Ventures
+Ventures are a highlevel chain of events that may be experienced by players. (will reconsider the terminology). 
+Ventures consist of locations, thespians and quests. The word "quest" refers to the specific object of the same name in the mushi  programming language.
+List of Ventures:
+[[Choosing A Class]]
+[[Choosing your office]]
+[[Enslaved]]
+
+:: Choosing A Class [venture]
+This is the first venture. It starts upon creating a character and only ends 
+when a player has chosen to become a plebeian, patrician, been enslaved 
+or gained a level threshold as an [[outlaw]]. Once one of these classes is 
+assigned (there may be more) then the class is permanent unless the player
+re-starts this venture.  Restarting will reverse all feats, skills, and levels.
+But not property ownership.  Maybe. 
+
+
+:: Outlaw [class]
+The outlaw class is not assigned until a player has reached a certain 
+level by pure painful grinding. 
+
+
+:: Choosing your office [venture patrician]
+
+:: Gate [region building]
+This is the spawn in point. I imagine placing it near the ghost fence... 
+Build something suitable to represent a world gate. Touching it should be fatal
+
+:: Ambush [region desert ven_Enslaved]
+
+:: Market [region inNewRome ven_ChooseProfession]
+
+:: Slave Pits [region ven_Enslaved]

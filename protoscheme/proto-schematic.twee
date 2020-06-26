@@ -62,8 +62,8 @@ Make a list of admin defined general locations where development happens. Region
 :: rg New Rome
 A big city. Contains the [Palace](#palace); mansions of all patricians... I picture a teired city similar to "Charisat" in _City of Bones_ by Martha Wells with the palace near the top. Almost every plebeian guild headquaters and living arrangement is in the city.
 
-::# New Rome Regions
-[Palace](#palace)
+*New Rome Regions*
+[[Palace| rg Palace]]
 
 ::# New Rome Buildings
 
@@ -95,4 +95,9 @@ SetStories are distinct from organic stories that all players are creating ans e
 Specifically SetStories generall consist of locations, thespians and quests. The word "quest" refers to the specific object of the same name in the mushi  programming language.
 ## Choosing A Class
 ## Guarding the Caravan
-## Striking out alone 
+## Striking out alone
+
+:: rg Gate of Ivrel
+This is the spawn in point. I imagine placing it near the ghost fence... 
+Build something suitable to represent a world gate. Touching it should be fatal
+
